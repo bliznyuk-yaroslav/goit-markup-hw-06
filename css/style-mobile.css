@@ -24,11 +24,191 @@ body{
         max-width: 100%;
     }
     .container{
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     
+    }
+    button{
+        cursor: pointer;
     }
     .section{
         padding-top: 120px;
         padding-bottom: 120px;}
+
+        .main-page{
+            border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+background: var(--WHITE, #FFF);
+box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+        }    
+
+        .logo-link{
+            display: flex;
+            align-items: center;
+            color: #4d5ae5;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        }  
+        .design-logo{
+            
+            color:  #2E2F42;
+            font-size: 18px;
+            line-height: 1.17; 
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        .visually-hidden{
+            position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            justify-content: space-between;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999999999;
+            background: #FFF;
+            transform: translateX(100%);
+            transition: transform 250ms linear;
+          }
+
+          .menu-list{
+            display: none;
+          }
+          .menu-address-list-item{
+            display: none;
+          }
+
+          .main-cont{
+            display: flex;
+  align-items: center;
+  justify-content: space-between;
+          }
+          .mobile-open-btn{
+        
+          }
+
+ @media screen and (max-width: 767px) {
+    .mobile-open-btn {
+     border: none;
+     background-color: transparent;
+     padding: 0;
+     line-height: 0;}
+          
+    .mobile-open-btn-icon {
+    stroke: #111111;
+    }
+          
+    .mobile-menu {
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+    height: 100%;
+    z-index: 99999999999;
+    background: #FFF;
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+    }
+          
+   .mobile-menu.is-open {
+    transform: translateX(0%);
+}
+          
+.mobile-menu-container {
+    position: relative;
+    }
+          
+.mobile-menu-close-btn {
+position: absolute;
+top: 0;
+right: 0;
+border: none;
+background-color: transparent;
+ padding: 0;
+line-height: 0;
+stroke: #ffffff;
+    }
+
+    .modal-close-btn {
+ display: flex;
+ align-items: center;
+justify-content: center;
+position: absolute;
+ top: 24px;
+right: 24px;
+ width: 24px;
+height: 24px;
+border-radius: 50%;
+border: 1px solid  rgba(0, 0, 0, 0.1);;
+background-color:#e7e9fc;
+padding: 0px;
+line-height: 0;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: #2e2f42;
+              }
+
+.menu-addres-list-link-mobile{
+    display:flex;
+    color: #2E2F42;
+    
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-list-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+width: 151px;
+    padding-top: 72px;
+}
+ .menu-item-mobile{
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+            }
+.modal-close-btn-icon{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+          }
+.menu-address-list-item-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+color: #2E2F42;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+          }
+        }
+          
+.menu-addres-list-link-mobile{
+    color: #2E2F42;
+}
+
+        @media screen and (min-width: 480px){
+
+        }
+
+        @media screen and (min-width: 768px){
+
+        }
