@@ -76,7 +76,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
         .mobile-menu {
             position: fixed;
-            justify-content: space-between;
             top: 0;
             left: 0;
             width: 100%;
@@ -100,7 +99,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   justify-content: space-between;
           }
           .mobile-open-btn{
-        
           }
 
  @media screen and (max-width: 767px) {
@@ -116,12 +114,13 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
           
     .mobile-menu {
     position: fixed;
+    background: #FFFFFF;
      top: 0;
      left: 0;
      width: 100%;
     height: 100%;
     z-index: 99999999999;
-    background: #FFF;
+  
     transform: translateX(100%);
     transition: transform 250ms linear;
     }
@@ -132,6 +131,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
           
 .mobile-menu-container {
     position: relative;
+    min-height: 100%;
     }
           
 .mobile-menu-close-btn {
@@ -194,16 +194,52 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-direction: column;
     gap: 24px;
 color: #2E2F42;
+
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
           }
-        }
+.menu-address-list-mobile{
+ position: absolute;
+bottom: 128px;
+}
+.social-list-mobile{
+position: absolute;
+ bottom: 40px;
+display: flex;
+justify-content: center;
+gap:40px; 
+          }
           
+.social-list-link-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height:0;
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 .menu-addres-list-link-mobile{
     color: #2E2F42;
 }
+.social-list-icon{
+    fill: #f4f4fd
+  
+}
+.menu-addres-list-link-mobile:hover,
+.menu-addres-list-link-mobile:focus{
+    color: #404bbf;
+}
+.social-list-link-mobile:hover,
+.social-list-link-mobile:focus {
+    background-color:#404bbf;
+}
+}
+   
 
         @media screen and (min-width: 480px){
 
