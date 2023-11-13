@@ -257,12 +257,35 @@
             <ul class="portfolio-list">
                 <li class="porfolio-blocks">
                     <div class="overlay">
-                        <img class="team-foto" 
-                        srcset="
-                        .images/bank-mobile,
-                        .images/bank/table,
-                        .image/bank-desktop."
-                        src="./images/bank.jpg" alt="app-bank" width="360" height="300">
+                         <picture>
+                            <!-- Desktop screen -->
+                            <source
+                             media="(min-width: 1200px)"
+                             srcset="./images/bank-desktop.jpg 1x, 
+                                    ./images/bank-desktop@2x.jpg 2x"
+                             type="images/jpg"
+                            />
+                            <!-- Tablet screen -->
+                            <source
+                             media="(min-width: 768px)"
+                             srcset="./images/bank-table.jpg 1x, 
+                                   ./images/bank-table@2x.jpg 2x"
+                             type="images/jpg"
+                            />
+                            <!-- Mobile screen -->
+                            <source
+                             media="(max-width: 767px)"
+                             srcset="./images/bank-mobile 1x, ./images/bank-mobile@2x.jpg 2x"
+                             type="images/jpg"
+                            />
+                            <img
+                             src="./images/bank-mobile.jpg"
+                             alt="Ноутбук"
+                             width="360"
+                            height="300"
+                             loading="lazy"
+                            />
+                           </picture>
                     <p class="overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="port-text">
@@ -272,7 +295,14 @@
                 </li>
                 <li class="porfolio-blocks">
                     <div class="overlay">
-                    <img class="team-foto" src="./images/cashless.jpg" alt="app-cashless" width="360" height="300">
+                    <img  srcset="
+                    ./images/cashless-mobile.jpg 280w,
+                    ./images/cashless-table.jpg 356w,
+                    ./images/cashless-desktop.jpg 360w"
+                    
+                    sizes="(min-width:1200px) 360px, (min-width: 768px) 356px, (max-width:767px) 280px"
+                    src="./images/cashless-mobile.jpg"
+                    alt="app-cashless">
                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="port-text">
@@ -282,7 +312,13 @@
                 </li>
                 <li class="porfolio-blocks">
                     <div class="overlay">
-                    <img class="team-foto" src="./images/meditation.jpg" alt="app-meditation" width="360" height="300">
+                    <img  srcset="
+                    ./images/meditation-mobile.jpg 280w,
+                    ./images/meditation-table.jpg 356w,
+                    ./images/meditation-desktop.jpg 360w"
+                    
+                    sizes="(min-width:1200px) 360px, (min-width: 768px) 356px, (max-width:767px) 280px"
+                    src="./images/meditation-mobile.jpg" alt="app-meditation">
                     <p class="overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="port-text">
@@ -292,7 +328,13 @@
                 </li>
                 <li class="porfolio-blocks">
                     <div class="overlay">
-                    <img  class="team-foto" src="./images/taxi.jpg" alt="app-taxi" width="360" height="300">
+                    <img  srcset="
+                    ./images/taxi-mobile.jpg 280w,
+                    ./images/taxi-table.jpg 356w,
+                    ./images/taxi-desktop.jpg 360w"
+                    
+                    sizes="(min-width:1200px) 360px, (min-width: 768px) 356px, (max-width:767px) 280px"
+                    src="./images/taxi-mobile.jpg" alt="app-taxi">
                     <p class="overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="port-text">
@@ -302,7 +344,13 @@
                 </li>
                 <li class="porfolio-blocks">
                     <div class="overlay">
-                    <img class="team-foto" src="./images/screen.jpg" alt="app-screen" width="360" height="300">
+                    <img srcset="
+                    ./images/screen-mobile.jpg 280w,
+                    ./images/screen-table.jpg 356w,
+                    ./images/screen-desktop.jpg 360w"
+                    
+                    sizes="(min-width:1200px) 360px, (min-width: 768px) 356px, (max-width:767px) 280px"
+                    src="./images/screen-mobile.jpg" alt="app-screen">
                     <p class="overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="port-text">
@@ -312,7 +360,13 @@
                 </li>
                 <li class="porfolio-blocks">
                     <div class="overlay">
-                    <img class="team-foto"  src="./images/online1.png" alt="app-online" width="360" height="300">
+                    <img srcset="
+                    ./images/online-molibe.jpg 280w,
+                    ./images/online-table.jpg 356w,
+                    ./images/online-desktop.jpg 360w"
+                    
+                    sizes="(min-width:1200px) 360px, (min-width: 768px) 356px, (max-width:767px) 280px"
+                    src="./images/online-molibe.jpg" alt="app-online">
                     <p class="overlay-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="port-text">
