@@ -21,7 +21,6 @@ body{
     }
     img{
         display: block;
-width: 100%;
     }
     .container{
     padding-left: 16px;
@@ -296,7 +295,6 @@ letter-spacing: 0.02em;
                 }
                 .porfolio-blocks{
                     background-color: #FFFFFF;
-                    width: 288px;
 
                    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
