@@ -21,6 +21,7 @@ body{
     }
     img{
         display: block;
+        width: 100%;
        
     }
     .container{
@@ -546,13 +547,8 @@ letter-spacing: 0.02em;
                         fill: #F4F4FD;
                         }
 
- /* ==============================END GENERAL ============================================= */          
-                
 
-/* ==============================MOBILE MEDIA============================================= */
-
- @media screen and (max-width: 767px) {
-    .mobile-open-btn{
+  .mobile-open-btn{
        display: flex;
        align-items: center;
        justify-content: center;
@@ -703,6 +699,17 @@ gap:40px;
 
     
 }
+
+
+
+ /* ==============================END GENERAL ============================================= */          
+                
+
+/* ==============================MOBILE MEDIA============================================= */
+
+ @media screen and (max-width: 767px) {
+
+  
 
 }
 /* ==============================END MOBILE============================================= */
@@ -858,7 +865,9 @@ margin: 0;
         .social-list-table{
         width: 288px;
         }
-
+        .review-form-footer{
+            width: 264px;
+        }
 
 /* ==============================END TABLET============================================= */
 
