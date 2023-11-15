@@ -117,9 +117,6 @@ button {
 
 /* =======================================HEROOO============================================ */
 .hero {
-  display: flex;
-  background: #2e2f42;
-  justify-content: center;
   text-align: center;
   margin: 0 auto;
   padding: 72px 0;
@@ -129,26 +126,23 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-desktop.jpg);
-    background-size:auto;
+    url(../images/hero-mobile.jpg);
+    background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
 
 }
 
 .hero-text {
-  display: flex;
   color: #fff;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  letter-spacing: 0.72px;
   margin-left: auto;
   margin-right: auto;
   width: 220px;
   height: 160px;
   margin-bottom: 72px;
-  letter-spacing: 1.12px;
 }
 .hero-button {
   display: block;
@@ -189,7 +183,7 @@ background: #404bbf;
 .advans-lists {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  row-gap: 72px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -244,7 +238,7 @@ background: #404bbf;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 72px;
   padding: 0;
   box-sizing: content-box;
 }
@@ -278,8 +272,6 @@ background: #404bbf;
   line-height: 1.2;
   letter-spacing: 0.02em;
   font-weight: 500;
-  text-align: center;
-  margin-bottom: 8px;
 }
 .team-profess-description {
   color: #434455;
@@ -333,8 +325,6 @@ background: #404bbf;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   row-gap: 48px;
   padding: 0;
 }
@@ -483,7 +473,7 @@ background: #404bbf;
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 72px;
 }
 .social-list-item-footer {
   width: 40px;
@@ -622,8 +612,7 @@ background: #404bbf;
   height: 623px;
   border-radius: 4px;
   background: #fcfcfc;
-  padding: 16px;
-  padding-top: 72px;
+  padding: 72px 16px 16px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -847,6 +836,21 @@ background: #404bbf;
 
 /* ===================================BACKDROP==================================== */
 
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-mobile@2x.jpg);
+  }
+}
+
+
+
 /* ==============================END MOBILE============================================= */
 
 
@@ -1002,6 +1006,20 @@ background: #404bbf;
 
 
 /* ==============================TABLET============================================= */
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+  screen and (min-resolution: 2dppx) and (max-width: 1157px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 1157px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-table@2x.jpg);
+  }
+}
+
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -1079,8 +1097,12 @@ background: #404bbf;
   }
   .hero {
     padding: 112px 0;
-
     height: 436px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-table.jpg);
   }
 
   .hero-text {
@@ -1093,12 +1115,14 @@ background: #404bbf;
   }
 
   .advans-lists {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
     column-gap: 24px;
-    row-gap: 72px;
+  }
+  .sect-team-list{
+  row-gap: 64px;
+  column-gap: 24px;
   }
   .sect-advans-blocks {
     width: calc((100% - 24px) / 2);
@@ -1107,27 +1131,28 @@ background: #404bbf;
   .advans-title {
     margin: 0;
   }
-  .advans-description {
-    font-weight: 400;
-  }
+ 
   .team-foto {
   }
   .porfolio-blocks {
     width: calc((100% - 24px) / 2);
   }
   .portfolio-list {
-    gap: 64px 24px;
+    row-gap: 72px;;
+    column-gap: 24px;
   }
   .footer-cont {
     width: 584px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 72px;
     margin-left: auto;
     margin-right: auto;
   }
   .footer-text {
     width: 264px;
+    margin: 0;
   }
 
   .social-list-table {
@@ -1140,6 +1165,7 @@ background: #404bbf;
   }
   .social-list-footer {
     justify-content: start;
+    margin-bottom: 0;
   }
 
   .review-form-field-label-footer {
@@ -1155,6 +1181,7 @@ background: #404bbf;
   .modal {
     width: 408px;
     height: 584px;
+    padding: 72px 24px 24px 24px;
 }
 .review-form-description{
     width: 360px;
@@ -1166,7 +1193,24 @@ background: #404bbf;
 
 /* ==============================END TABLET============================================= */
 
+
+
+
 /* ==============================DESKTOP============================================= */
+
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-desktop@2x.jpg);
+  }
+}
+
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1189,7 +1233,11 @@ background: #404bbf;
     padding: 112px 0;
     max-width: 1440px;
     height: 600px;
-    background-size: 100%;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-desktop.jpg);
   }
   .sect-advans-blocks {
     width: calc((100% - 72px) / 4);
@@ -1204,8 +1252,20 @@ background: #404bbf;
     background: var(--CLOUD, #f4f4fd);
     margin-bottom: 8px;
   }
+  .advans-title{
+    font-size:20px;
+    line-height: 1.2;
+    font-weight: 500;
+
+  }
+   .advans-description {
+    font-weight: 400;
+  }
   .porfolio-blocks {
     width: calc((100% - 48px) / 3);
+  }
+  .portfolio-list {
+   row-gap: 48px;
   }
   .footer-cont {
     column-gap: 0;
