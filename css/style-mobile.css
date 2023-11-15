@@ -1239,6 +1239,9 @@ background: #404bbf;
     ),
     url(../images/hero-desktop.jpg);
   }
+ .hero-text{
+  margin-bottom: 48px;
+ }
   .sect-advans-blocks {
     width: calc((100% - 72px) / 4);
   }
