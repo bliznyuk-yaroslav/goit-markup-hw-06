@@ -959,8 +959,8 @@ background: #404bbf;
       }
       .menu-address-list-item-mobile {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: column-reverse;
+        gap: 24px;
         color: #2e2f42;
       
         font-size: 20px;
