@@ -1180,6 +1180,9 @@ background: #404bbf;
     row-gap: 72px;;
     column-gap: 24px;
   }
+  .footer-container{
+    margin-bottom: 0;
+  }
   .footer-cont {
     width: 584px;
     display: flex;
@@ -1191,7 +1194,9 @@ background: #404bbf;
   }
   .footer-text {
     width: 264px;
-    margin: 0;
+  }
+  .social-list-table {
+    margin-bottom: 0;
   }
   .name-page {
     text-align: start;
@@ -1201,7 +1206,6 @@ background: #404bbf;
   }
   .social-list-footer {
     justify-content: start;
-    margin-bottom: 0;
   }
 
   .review-form-field-label-footer {
@@ -1314,9 +1318,6 @@ background: #404bbf;
   }
   .footer-container {
     margin-right: 120px;
-  }
-  .footer-text {
-    margin: 0;
   }
   .form-footer-mail {
     margin-left: 80px;
